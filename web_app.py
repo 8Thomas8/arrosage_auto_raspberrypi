@@ -6,6 +6,9 @@ from flask import Flask, render_template
 
 import water_app
 
+# Source: http://www.cyber-omelette.com/2017/09/automated-plant-watering.html
+# Avec refacto et customisation
+
 app = Flask(__name__)
 
 

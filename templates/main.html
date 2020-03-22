@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp Arroseur</title>
+</head>
+<body>
+    <header>
+        <h1>ARROSEUR AUTOMATIQUE</h1>
+        <h2>La date du serveur est {{ time }}</h2>
+        <h2> {{ text }}</h2>
+    </header>
+
+    <section>
+        <a href="/auto/water/ON"><button>Activer l'arrosage automatique</button></a>
+        <a href="/auto/water/OFF"><button>Eteindre l'arrosage automatique</button></a>
+        <a href="/sensor"><button>Vérifier l'état du sol</button></a> <br>
+        <a href="/water"><button>Arroser une fois</button></a>
+        <a href="/last_watered"><button>Dernier arrosage</button></a>
+    </section>
+
+</body>
+</html>

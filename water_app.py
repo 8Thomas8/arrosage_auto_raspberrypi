@@ -45,7 +45,7 @@ def init_output(pin):
 def auto_water():
     consecutive_water_count = 0
     init_output(pump_pin)
-    print("Arrosage automatique lancé, faites CTRL+C pour quitter.")
+    print("Arrosage automatique lance, faites CTRL+C pour quitter.")
     try:
         while True:
             time.sleep(delay_before_auto_watering)
@@ -67,11 +67,11 @@ def auto_water():
 # Active la pompe
 def pump_on():
     init_output(pump_pin)
-    # Ouvre le fichier en mode écriture
+    # Ouvre le fichier en mode ecriture
     f = open("last_watered.txt", "w")
     f.write("Dernier arrosage {}".format(datetime.datetime.now()))
     f.close()
-    # Active puis désactive la pompe
+    # Active puis desactive la pompe
     GPIO.output(pump_pin, GPIO.LOW)
     time.sleep(time_pump_on)
     GPIO.output(pump_pin, GPIO.HIGH)
